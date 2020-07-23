@@ -1,13 +1,13 @@
 {
-  "name": "winadolauncher",
+  "name": "winado-launcher",
   "version": "1.0.0",
   "productName": "Winado Launcher",
   "description": "Launcher Moddé Minecraft",
   "author": "Daniel Scalzi (https://github.com/dscalzi/) et flaax",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/notdragan/WinadoLauncher",
+  "homepage": "https://github.com/notdragan/Winado-Launcher",
   "bugs": {
-    "url": "https://github.com/notdragan/WinadoLauncher/pulls"
+    "url": "https://github.com/notdragan/Winado-Launcher/issues"
   },
   "private": true,
   "main": "index.js",
