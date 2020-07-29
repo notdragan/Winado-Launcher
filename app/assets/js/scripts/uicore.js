@@ -48,14 +48,14 @@ if(!isDev){
                 loggerAutoUpdaterSuccess.log('Aucune M.A.J Disponible', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/dscalzi/HeliosLauncher/releases/download/v${info.version}/helioslauncher-setup-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/notdragan/Winado-Launcher/releases/download/v${info.version}/Winado-Launcher-setup-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 
                 populateSettingsUpdateInformation(info)
                 break
             case 'update-downloaded':
-                loggerAutoUpdaterSuccess.log('Update ' + info.version + ' ready to be installed.')
+                loggerAutoUpdaterSuccess.log('La MAJ ' + info.version + ' est prête à être installée.')
                 settingsUpdateButtonStatus('Install Now', false, () => {
                     if(!isDev){
                         ipcRenderer.send('autoUpdateAction', 'installUpdateNow')
@@ -64,8 +64,8 @@ if(!isDev){
                 showUpdateUI(info)
                 break
             case 'update-not-available':
-                loggerAutoUpdater.log('No new update found.')
-                settingsUpdateButtonStatus('Check for Updates')
+                loggerAutoUpdater.log('Aucune nouvelle MAJ a été trouvé.')
+                settingsUpdateButtonStatus('Chercher des MAJ')
                 break
             case 'ready':
                 updateCheckListener = setInterval(() => {

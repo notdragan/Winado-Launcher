@@ -227,7 +227,7 @@
                     </div>
                     <input id="settingsJVMOptsVal" cValue="JVMOptions" type="text">
                 </div>
-                <div id="settingsJVMOptsDesc">Les options qui devraient être appliquées au lancement de Java. <em>-Xms</em> and <em>-Xmx</em> should not be included.<br><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/<%= process.platform === 'win32' ? 'windows' : 'unix' %>/java.html">Voir les options disponibles pour Java</a>.</div>
+                <div id="settingsJVMOptsDesc">Les options qui devraient être appliquées au lancement de Java. <em>-Xms</em> et <em>-Xmx</em> ne devrait pas être inclus.<br><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/<%= process.platform === 'win32' ? 'windows' : 'unix' %>/java.html">Voir les options disponibles pour Java</a>.</div>
             </div>
         </div>
         <div id="settingsTabLauncher" class="settingsTab" style="display: none;">
@@ -261,7 +261,7 @@
                             </svg>
                         </div>
                         <input class="settingsFileSelVal" type="text" value="null" cValue="DataDirectory" disabled>
-                        <button class="settingsFileSelButton" dialogTitle="Select Data Directory" dialogDirectory="true">Choose Folder</button>
+                        <button class="settingsFileSelButton" dialogTitle="Select Data Directory" dialogDirectory="true">Choisissez un fichier</button>
                     </div>
                 </div>
                 <div class="settingsFileSelDesc">Tous les fichiers et installations Java locals seront stockés ici.<br>Les screenshots et les mondes se trouvent dans le chemin des fichiers du serveur. (.winado)</div>
